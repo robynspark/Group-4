@@ -1,0 +1,7 @@
+3/27/2017 Meeting
+
+Project Ideas: 
+
+What we would like to do is build a twitterbot for GW events. What we imagine the project will consist of is first building a scrapper that extracts the daily events from the table listed on the website, download it into a cvs, which we then connect to our twitterbot and it tweets out the days events. We think this is a good project because it has concrete data, it would be useful to GW students as a way of easily checking events, and incorporates mechanisms we've learned in class. 
+
+Data: http://browse.calendar.gwu.edu/EventList.aspx?fromdate=3/27/2017&todate=4/16/2017&display=Month&view=DateTime
