@@ -1,4 +1,3 @@
-
 import csv
 import requests
 from BeautifulSoup import BeautifulSoup
@@ -8,7 +7,7 @@ response = requests.get(url)
 html = response.content
 
 soup = BeautifulSoup(html)
-table = soup.find('table')
+table = soup.findAll('table')[3]
 
 list_of_rows = []
 for row in table.findAll('tr')[1:-1]:
