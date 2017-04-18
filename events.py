@@ -2,7 +2,7 @@ import csv
 import requests
 from BeautifulSoup import BeautifulSoup
 
-url = "http://browse.calendar.gwu.edu/EventList.aspx?fromdate=4/13/2017&todate=4/13/2017&view=DateTime&display=Day&type=public"
+url = "http://browse.calendar.gwu.edu/EventList.aspx?fromdate=4/18/2017&todate=4/18/2017&view=DateTime&display=Day&type=public"
 response = requests.get(url)
 html = response.content
 
@@ -18,6 +18,6 @@ for row in table.findAll('tr')[2:]:
 
 outfile = open("events.csv", "wb")
 writer = csv.writer(outfile)
-writer.writerow(["date", "url", "text"])
+writer.writerow(["time", "url", "text"])
 writer.writerows(list_of_rows)
 
