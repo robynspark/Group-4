@@ -1,3 +1,4 @@
+
 import csv
 import requests
 from BeautifulSoup import BeautifulSoup
@@ -20,4 +21,3 @@ outfile = open("events.csv", "wb")
 writer = csv.writer(outfile)
 writer.writerow(["time", "url", "text"])
 writer.writerows(list_of_rows)
-
