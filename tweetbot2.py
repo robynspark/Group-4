@@ -41,7 +41,6 @@ with open('events2.csv', 'r') as file:
 	a = csv.DictReader(file)
 	for row in a:
 		msg = "%s at %s. URL: %s" % (row['text'], row['time'], row['url'])
-		#if len(msg) > 140:
-			# need to truncate it
-			#msg = (msg[:140])
+		if len(msg) > 140:
+			msg = (msg[:140])
 		twitter.update_status(status=msg)
